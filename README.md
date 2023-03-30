@@ -28,7 +28,7 @@
     - can be configured to focus on predicting different parts of the world most relevant to the task at hand
     - predictions at multiple levels of abstraction and multiple timescales
     - how to represent uncertainty in predictions?
-- **Actor-** does the planning and reasoning to find the optimal action to take to accomplish the current task
+- **Actor-** does the planning to find the optimal action to take to accomplish the current task
     - multiple levels of planning and different levels of abstract actions
     - planning under uncertainty is important since the world has inherent randomness
     - this is where classical AI search techniques can be integrated
@@ -36,7 +36,7 @@
 - **Perception-** process outputs from different sensors (e.g. cameras, microphones, etc.) into useful representations for the other modules
     - DL currently excels at this part
 - **Configurator-** updates the settings of the other modules to accomplish the current task
-- **Cost-** drives the behavior of the agent by having high-cost for undesired behaviors and low-cost for desired behaviors. an energy minimization framework (e.g. gradient descent) can then be used for reasoning 
+- **Cost-** drives the behavior of the agent by having high-cost for undesired behaviors and low-cost for desired behaviors. an energy minimization framework (e.g. gradient descent) can then be used for planning 
     - **Intrinsic Cost**- hardwired behavioral drives like hunger, pain, etc.
     - **Critic**- neural network that is trained to predict the intrinsic cost for a state
 - **Short-term memory-** stores states from the world. used to train world model and critic 
@@ -68,7 +68,8 @@
 - Does not reference many important prior related works
     - cognitive architectures have been researched before but he cites none of them
     - leaves out many other important works regarding learning for machine intelligence
-- Does not develop ideas for how the configurator module might work, which is one of the more important modules for the whole architecture to work as described so more detail here would have been useful 
+- Does not develop ideas for how the configurator module might work, which is one of the more important modules for the whole architecture to work as described so more detail here would have been useful
+- Seems focused on planning for physical actions, less clear if this architecture would be useful for NLP tasks that LLMs currently excel at 
 - This is just LeCunn's personal position on how to achieve autonomous machine intelligence but others have different approaches that might work as well
 
 ## Resources
