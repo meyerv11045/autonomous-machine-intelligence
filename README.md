@@ -4,6 +4,9 @@
 
 ## Overview
 
+[Video Recording](https://youtu.be/iKaHHheVROY)
+
+
 ### Problem
 
 1. How to represent the world primarily using observational data? 
@@ -50,7 +53,8 @@
 - Caputres the dependencies between $x$ and $y$ without explicitly generating predictions of $y$
 - Predict the representation of $y$ from the representation of $x$
     - Make predictions in representation space, so it does not need to predict every detail of y
-- ![](static/H-JEPA.png)
+
+![](static/H-JEPA.png)
 
 ![](static/JEPA-planning.png)
 
