@@ -6,10 +6,10 @@
 
 ### Problem
 
-1. How to represent the world primarily by observation? 
+1. How to represent the world primarily using observational data? 
     - interaction with real world is dangerous and expensive
-2. How to plan in ways compatible with gradient-based learning?
-3. How to represent observations and action plans in a hierarchical manner?
+2. How to plan actions in ways compatible with gradient-based learning?
+3. How to represent action plans in a hierarchical manner?
     - multiple levels of abstraction and multiple time scales
 
 ### Approach
@@ -25,14 +25,13 @@
 ![](static/cog-arch.png)
 
 - **World Model-** predicts next state of world given the current state and an action taken
-    - can be configured to focus on predicting different parts of the world most relevant to the task at hand
-    - predictions at multiple levels of abstraction and multiple timescales
-    - how to represent uncertainty in predictions?
+    - Can be configured to focus on predicting different parts of the world most relevant to the task at hand
+    - Predictions at multiple levels of abstraction and multiple timescales
+    - How to represent uncertainty in predictions?
 - **Actor-** does the planning to find the optimal action to take to accomplish the current task
-    - multiple levels of planning and different levels of abstract actions
-    - planning under uncertainty is important since the world has inherent randomness
-    - this is where classical AI search techniques can be integrated
-        - Ex: tree search, optimization, etc. The 
+    - Multiple levels of planning and different levels of abstract actions
+    - Planning under uncertainty is important since the world has inherent randomness
+    - This is where classical AI search techniques can be integrated
 - **Perception-** process outputs from different sensors (e.g. cameras, microphones, etc.) into useful representations for the other modules
     - DL currently excels at this part
 - **Configurator-** updates the settings of the other modules to accomplish the current task
@@ -53,7 +52,7 @@
     - Make predictions in representation space, so it does not need to predict every detail of y
 - ![](static/H-JEPA.png)
 
-![Screen Shot 2023-03-29 at 10.16.03 PM](static/JEPA-planning.png)
+![](static/JEPA-planning.png)
 
 ### Question 2
 
@@ -61,7 +60,7 @@
 
 ### Hierarchical JEPA (H-JEPA)
 
-![Screen Shot 2023-03-29 at 10.12.22 PM](static/HJEPA.png)
+![](static/HJEPA.png)
 
 ## Critical Analysis
 
